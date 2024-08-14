@@ -25,28 +25,16 @@
 		<div class="register_1l clearfix">
 			<div class="register_1li clearfix">
 				<h3 class="mgt">Welcome to Rose Jewelry</h3>
-				<p>Nulla quis sem at nibh imperdiet Duis sagittis ipsum Praesent mauris.</p>
-				<h4 class="c_text">Create a New Account</h4>
+				
+				<h4 class="c_text">Login to your Account</h4>
+				<h5 runat="server" id="h5Message" class="text-success"> </h5>
 			</div>
-			<div class="register_1li1 clearfix">
-				<div class="col-sm-6 space_left">
-					<div class="register_1li1l clearfix">
-						<h5>First Name *</h5>
-						<input class="form-control" type="text">
-					</div>
-				</div>
-				<div class="col-sm-6 space_right">
-					<div class="register_1li1l clearfix">
-						<h5>Last Name *</h5>
-						<input class="form-control" type="text">
-					</div>
-				</div>
-			</div>
+			
 			<div class="register_1li1 clearfix">
 				<div class="col-sm-12 space_all">
 					<div class="register_1li1l clearfix">
 						<h5>Enter Your Email *</h5>
-						<input class="form-control" type="text">
+						<asp:TextBox ID="TextEmail" CssClass="form-control" TextMode="Email" required="required" runat="server"></asp:TextBox>
 					</div>
 				</div>
 			</div>
@@ -54,43 +42,26 @@
 				<div class="col-sm-12 space_all">
 					<div class="register_1li1l clearfix">
 						<h5>Enter Your Password *</h5>
-						<input class="form-control" type="text">
+						<asp:TextBox ID="TextPassword" TextMode="Password" CssClass="form-control" required="required" runat="server"></asp:TextBox>
 					</div>
 				</div>
 			</div>
-			<div class="register_1li1 clearfix">
-				<div class="col-sm-12 space_all">
-					<div class="register_1li1l clearfix">
-						<h5>Confirm Password *</h5>
-						<input class="form-control" type="text">
-						<h5><a class="button_1" href="#">SIGN IN</a></h5>
-						<span class="tick_box"><input class="check" type="checkbox"> Remember Me</span>
+		
+					<div class="register_1li1l clearfix" style="padding-top:1rem">												
+						<asp:Button ID="btnLogin" CssClass="btn btn-lg btn-success" runat="server" Text="Sign In" 
+				OnClick="btnLogin_Click"/>		
+						<span class="tick_box">
+							<asp:CheckBox ID="checkRemember" runat="server" /> Remember Me</span>
+
 						<h6>Forgot Password ? <a class="c_text" href="#">Click Here</a></h6>
 					</div>
-				</div>
-			</div>
-			
-			
-			
-			<
-				<div class="col-sm-12 space_all">
-					<h6 class="term"><input class="check" type="checkbox"> I agree with website <a class="c_text" href="#">Terms and Services</a></h6>
-					<h6 class="term"><input class="check" type="checkbox">  Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer nec odio Praesent libero Sed cursus ante dapibus diam. </h6>
-				</div>
-				<div class="col-sm-12 space_all">
-					<h6 class="term"><input class="check" type="checkbox"> I'm not a robot </h6>
-					<h5><a class="button_1" href="#">CREATE ACCOUNT</a></h5>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6">
-	 <div class="register_1r clearfix">
-	  <img src="img/52.jpg" class="iw" alt="abc">	 </div>
-	</div>
+																	
+	
    </div>
   </div>
- </div>
+		</div>
+	  </div>
+	 </div>
 </section>
 
 </asp:Content>

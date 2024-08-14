@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RJewellery.master.cs" Inherits="RoseJwellery.RJewellery" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RJewelleryAdmin.Master.cs" Inherits="RoseJwellery.RJewelleryAdmin" %>
 
 <!DOCTYPE html>
 
@@ -11,14 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rd Jewellers</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/global.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -73,16 +73,7 @@
                                         </asp:LoginView>
 
 
-                                    </div>
-
-
-
-                                    <div class="header_1ri border_none clearfix">
-                                        <span class="span_1"><a class="col_1" href="#"><i class="fa fa-heart-o"></i></a></span>
-                                        <h5 class="mgt"><a href="#">My
-                                            <br>
-                                            Wishlist (0)</a></h5>
-                                    </div>
+                                    </div>                                   
                                 </div>
                             </div>
                         </div>
@@ -111,19 +102,21 @@
                                 <li class="dropdown">
                                     <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Product<span class="caret"></span></a>
                                     <ul class="dropdown-menu drop_3" role="menu">
-                                        <li><a href="product.html">Product</a></li>
-                                        <li><a class="border_none" href="detail.html">Product Detail</a></li>
+                                        <li><a href="product.html">Add New Product</a></li>
+                                        <li><a class="border_none" href="detail.html">Edit Product</a></li>
+                                        <li><a class="border_none" href="detail.html">Product List</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Blog<span class="caret"></span></a>
+                                    <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Users<span class="caret"></span></a>
                                     <ul class="dropdown-menu drop_3" role="menu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a class="border_none" href="blog_detail.html">Blog Detail</a></li>
+                                        <li><a href="blog.html">Add New User</a></li>
+                                        <li><a class="border_none" href="blog_detail.html">User List</a></li>
                                     </ul>
                                 </li>
 
-                                <li><a class="m_tag" href="about.html">About Us</a></li>
+                                <li><a class="m_tag" href="about.html">Orders</a></li>
+
                                 <li><a class="m_tag" href="contact.html">Contact</a></li>
                                 <li class="dropdown">
                                     <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="caret"></span></a>

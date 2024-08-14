@@ -170,6 +170,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\Default.aspx" />
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
     <Content Include="cart.html" />
@@ -194,6 +195,7 @@
     <Content Include="css\index.css" />
     <Content Include="css\list.css" />
     <Content Include="css\login.css" />
+    <Content Include="Register.aspx" />
     <Content Include="OldDefault.aspx" />
     <Content Include="detail.html" />
     <Content Include="favicon.ico" />
@@ -216,8 +218,9 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="CustomerReg.aspx" />
     <Content Include="RJewellery.Master" />
-    <Content Include="index.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Admin\RJewelleryAdmin.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="img\1.jpg" />
     <Content Include="img\10.jpg" />
@@ -271,7 +274,7 @@
     <Content Include="img\7.jpg" />
     <Content Include="img\8.jpg" />
     <Content Include="img\9.jpg" />
-    <Content Include="index.html" />
+    <Content Include="old.index.html" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\ziehharmonika.js" />
@@ -417,6 +420,20 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\RJewelleryAdmin.Master.cs">
+      <DependentUpon>RJewelleryAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RJewelleryAdmin.Master.designer.cs">
+      <DependentUpon>RJewelleryAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -434,6 +451,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="OldDefault.aspx.cs">
       <DependentUpon>OldDefault.aspx</DependentUpon>
@@ -483,12 +507,12 @@
     <Compile Include="CustomerReg.aspx.designer.cs">
       <DependentUpon>CustomerReg.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

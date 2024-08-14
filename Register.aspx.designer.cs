@@ -11,7 +11,7 @@ namespace RoseJwellery
 {
 
 
-    public partial class Login
+    public partial class Register
     {
 
         /// <summary>
@@ -22,6 +22,24 @@ namespace RoseJwellery
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl h5Message;
+
+        /// <summary>
+        /// TextFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextFName;
+
+        /// <summary>
+        /// TextLName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextLName;
 
         /// <summary>
         /// TextEmail control.
@@ -42,21 +60,30 @@ namespace RoseJwellery
         protected global::System.Web.UI.WebControls.TextBox TextPassword;
 
         /// <summary>
-        /// btnLogin control.
+        /// TextCpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.TextBox TextCpassword;
 
         /// <summary>
-        /// checkRemember control.
+        /// CompareValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox checkRemember;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+
+        /// <summary>
+        /// btnCreate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCreate;
     }
 }
