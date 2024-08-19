@@ -39,7 +39,7 @@
 				<div class="col-sm-6 space_right">
 					<div class="register_1li1l clearfix">
 						<h5>Last Name *</h5>
-						<asp:TextBox ID="TextLName" class="form-control" runat="server"></asp:TextBox>
+						<asp:TextBox ID="TextLName" class="form-control" runat="server" required="required"></asp:TextBox>
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 				<div class="col-sm-12 space_all">
 					<div class="register_1li1l clearfix">
 						<h5>Enter Your Email *</h5>
-						<asp:TextBox ID="TextEmail" TextMode="Email" class="form-control" runat="server"></asp:TextBox>
+						<asp:TextBox ID="TextEmail" TextMode="Email" class="form-control" runat="server" required="required"></asp:TextBox>
 					</div>
 				</div>
 			</div>
@@ -55,7 +55,7 @@
 				<div class="col-sm-12 space_all">
 					<div class="register_1li1l clearfix">
 						<h5>Enter Your Password *</h5>
-						<asp:TextBox ID="TextPassword" TextMode="Password" class="form-control" runat="server"></asp:TextBox>
+						<asp:TextBox ID="TextPassword" TextMode="Password" class="form-control" runat="server" required="required"></asp:TextBox>
 					</div>
 				</div>
 			</div>

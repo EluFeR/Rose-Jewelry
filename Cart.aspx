@@ -1,63 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rd Jewellers</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/global.css" rel="stylesheet">
-	<link href="css/list.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-	<script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </head>
-  
-<body>
-
-<section id="header">
- <div class="container">
-  <div class="row">
-   <div class="header_1 clearfix">
-    <div class="col-sm-2">
-	 <div class="header_1l text-center clearfix">
-	   <h2 class="mgt"><a class="col_1" href="Default.aspx">RD <span class="span_1">JEWELLERS</span>  <span class="span_2">JEWELRY WORLD</span></a></h2>
-	 </div>
-	</div>
-	<div class="col-sm-10">
-	 <div class="header_1r clearfix">
-	   <div class="header_1ri border_none clearfix">
-	     <div class="input-group">
-					<input type="text" class="form-control" placeholder="Search">
-					<span class="input-group-btn">
-						<button class="btn btn-primary" type="button">
-							<i class="fa fa-search"></i></button>
-					</span>
-				 </div>
-	   </div>
-	   <div class="header_1ri clearfix">
-	     <span class="span_1"><a class="col_1" href="#"><i class="fa fa-map-marker"></i></a></span>
-		 <h5 class="mgt"><a href="#">Store <br> Locator</a></h5>
-	   </div>
-	   <div class="header_1ri clearfix">
-	     <span class="span_1"><a class="col_1" href="login.html"><i class="fa fa-user"></i></a></span>
-		 <h5 class="mgt"><a href="login.html">Account <br> Login / Sign Up</a></h5>
-	   </div>
-	   
-	   <div class="header_1ri border_none clearfix">
-	     <span class="span_1"><a class="col_1" href="#"><i class="fa fa-heart-o"></i></a></span>
-		 <h5 class="mgt"><a href="#">My <br> Wishlist (0)</a></h5>
-	   </div>
-	 </div>
-	</div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="menu" class="clearfix cd-secondary-nav">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RJewellery.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="RoseJwellery.Cart" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    section id="menu" class="clearfix cd-secondary-nav">
 	<nav class="navbar nav_t">
 		<div class="container">
 		    <div class="navbar-header page-scroll">
@@ -76,7 +21,7 @@
 				
 				<li><a class="m_tag" href="Default.aspx">Home</a></li>
 				<li class="dropdown">
-					  <a class="m_tag active_tab" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Product<span class="caret"></span></a>
+					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Product<span class="caret"></span></a>
 					  <ul class="dropdown-menu drop_3" role="menu">
 						<li><a href="product.html">Product</a></li>
 						<li><a class="border_none" href="detail.html">Product Detail</a></li>
@@ -93,7 +38,7 @@
 				<li><a class="m_tag" href="about.html">About Us</a></li>
 				<li><a class="m_tag" href="contact.html">Contact</a></li>
 				<li class="dropdown">
-					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="caret"></span></a>
+					  <a class="m_tag active_tab" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="caret"></span></a>
 					  <ul class="dropdown-menu drop_3" role="menu">
 					    <li><a href="login.html">My Account</a></li>
 						<li><a href="cart.html">Shopping Cart</a></li>
@@ -246,232 +191,146 @@
  <div class="row">
    <div class="center_prod_1 clearfix">
     <div class="col-sm-12">
-	 <h6 class="mgt col_1 normal"><a href="#">Home</a>  <i style="font-size:14px; margin-left:5px; margin-right:5px;" class="fa fa-chevron-right"></i>   Products</h6>
+	 <h6 class="mgt col_1 normal"><a href="#">Home</a>  <i style="font-size:14px; margin-left:5px; margin-right:5px;" class="fa fa-chevron-right"></i>   Shopping Cart</h6>
 	</div>
    </div>
  </div>
 </div>
 </section>
 
-<section id="product">
-<div class="container">
- <div class="row">
-   <div class="product_1 clearfix">
-     <div class="col-sm-3">
-	  <div class="product_1l clearfix">
-	    <div class="center_shop_1li clearfix">
-	   <h5 class="mgt">CATEGORY</h5>
-	    <div class="ziehharmonika">
-			<h3 data-prefix="★" class="active"><a href="detail.html">Bangles</a><div class="arrowDown"></div><div class="collapseIcon">–</div><div class="arrowDown"></div><div class="collapseIcon">–</div><div class="arrowDown"></div><div class="collapseIcon">–</div></h3>
-			<div class="clickable" style="display: block;">
-              <ul>
-			   <li><a href="detail.html">For Men</a></li>
-			   <li><a href="detail.html">For Function</a></li>
-			   <li><a href="detail.html">For Kids</a></li>
-			   <li><a href="detail.html">For Women</a></li>
-			  </ul>
-           </div>
-		   <h3 data-prefix="★"><a href="detail.html">Bracelets</a><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div></h3>
-			<div class="clickable" style="">
-              <ul>
-			   <li><a href="detail.html">For Men</a></li>
-			   <li><a href="detail.html">For Function</a></li>
-			   <li><a href="detail.html">For Kids</a></li>
-			   <li><a href="detail.html">For Women</a></li>
-			  </ul>
-           </div>
-		   <h3 data-prefix="★" class=""><a href="detail.html">Earrings</a><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div></h3>
-			<div class="clickable" style="display: none;">
-              <ul>
-			   <li><a href="detail.html">For Men</a></li>
-			   <li><a href="detail.html">For Function</a></li>
-			   <li><a href="detail.html">For Kids</a></li>
-			   <li><a href="detail.html">For Women</a></li>
-			  </ul>
-           </div>
-		   <h3 data-prefix="★"><a href="detail.html">Necklaces</a><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div></h3>
-			<div class="clickable" style="">
-              <ul>
-			   <li><a href="detail.html">For Men</a></li>
-			   <li><a href="detail.html">For Function</a></li>
-			   <li><a href="detail.html">For Kids</a></li>
-			   <li><a href="detail.html">For Women</a></li>
-			  </ul>
-           </div>
-		   <h3 data-prefix="★" class=""><a href="detail.html">Rings</a><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div><div class="arrowDown"></div><div class="collapseIcon">+</div></h3>
-			<div class="clickable" style="display: none;">
-              <ul>
-			   <li><a href="detail.html">For Men</a></li>
-			   <li><a href="detail.html">For Function</a></li>
-			   <li><a href="detail.html">For Kids</a></li>
-			   <li><a href="detail.html">For Women</a></li>
-			  </ul>
-           </div>
-		  </div>
-	  </div>
-	    <div class="product_1i clearfix">
-	   <h5 class="mgt">SEARCH</h5>
-	  <div class="input-group">
-					<input type="text" class="form-control form_2" placeholder="Search Here...">
-					<span class="input-group-btn">
-						<button class="btn btn-primary" type="button">
-							<i class="fa fa-search"></i></button>
-					</span>
-      </div>
-	  </div>
-	    <div class="blog_1li1 clearfix">
-	    <h5 class="mgt heading">BEST PRODUCTS</h5>
-		<div class="blog_1li1i clearfix">
-		 <div class="col-sm-4 space_left">
-		  <img src="img/22.jpg" class="iw" alt="abc">
-		 </div>
-		 <div class="col-sm-8 space_all">
-		  <h5 class="mgt"><a href="detail.html">Elegan Tells You The Story Of Beauty</a></h5>
-		  <h4>$ 799.00</h4>
-		  <h6><a class="col_1" href="detail.html">Read More</a></h6>
-		 </div>
-		</div>
-		<div class="blog_1li1i clearfix">
-		 <div class="col-sm-4 space_left">
-		  <img src="img/23.jpg" class="iw" alt="abc">
-		 </div>
-		 <div class="col-sm-8 space_all">
-		  <h5 class="mgt"><a href="detail.html">Elegan Tells You The Story Of Beauty</a></h5>
-		  <h4>$ 699.00</h4>
-		  <h6><a class="col_1" href="detail.html">Read More</a></h6>
-		 </div>
-		</div>
-		<div class="blog_1li1i pdb border_none clearfix">
-		 <div class="col-sm-4 space_left">
-		  <img src="img/24.png" class="iw" alt="abc">
-		 </div>
-		 <div class="col-sm-8 space_all">
-		  <h5 class="mgt"><a href="detail.html">Elegan Tells You The Story Of Beauty</a></h5>
-		  <h4>$ 999.00</h4>
-		  <h6><a class="col_1" href="detail.html">Read More</a></h6>
-		 </div>
-		</div>
-	  </div>
-	  </div>
+<section id="cart_page" class="clearfix cart">
+ <div class="container">
+  <div class="row">
+    
+	<div class="cart_2 clearfix">
+	 <div class="col-sm-6">
+	  <h3 class="bold col_1">MY CART</h3>
 	 </div>
-	 <div class="col-sm-9">
-	  <div class="product_1r clearfix">
-	    <div class="center_product_1r2 clearfix">
-	   <div class="col-sm-6">
-	    <div class="center_product_1r2l clearfix">
-		  <p class="mgt">Showing 1–9 of 10 results</p>
-		</div>
+	 <div class="col-sm-6">
+      <h5 class="text-right"><a href="#">Continue Shopping</a></h5>
+	 </div>
+	</div>
+	<div class="cart_3 clearfix">
+	 <div class="col-sm-8">
+	  <div class="cart_3l clearfix">
+	   <h5 class="mgt">PRODUCT</h5>
+	  </div>
+	  <div class="cart_3l1 clearfix">
+	   <div class="col-sm-3 space_left">
+	    <div class="cart_3l1i clearfix">
+		 <a href="#"><img src="img/15.jpg" alt="abc" class="iw"></a>		</div>
 	   </div>
-	   <div class="col-sm-6">
-	    <div class="center_product_1r2r text-right clearfix">
-		 <h5 class="mgt">SORT BY</h5>
-		 <select class="form-control" id="subject" name="subject">
-		<option>Price, Low To High</option>
-		<option>Price, High To Low</option>
-		<option>Alphabetically, A-Z</option>
-		<option>Alphabetically, Z-A</option>
-		<option>Date, New To Old</option>
-		</select>
+	   <div class="col-sm-9">
+	    <div class="cart_3l1i1 clearfix">
+		 <h5 class="mgt"><a href="#">Naminos elementum disus tincidunts cosmo de cosmopolis</a></h5>
+		 <h5 class="normal">RED / XS</h5>
+		 <h6>Vendor</h6>
+		 <h4>$175.00</h4>
+		 <h5>Quantity</h5>
+		</div>
+		<div class="cart_3l1i2 clearfix">
+         <div class="input-group number-spinner">
+				<span class="input-group-btn">
+					<button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+				</span>
+				<input type="text" class="form-control text-center" value="1">
+				<span class="input-group-btn">
+					<button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+				</span>			</div>
+		 <h6 class="mgt"><a class="button_1 mgt" href="#">REMOVE</a></h6>
+         <h6 class="mgt"><a class="button mgt" href="#">UPDATE CART</a></h6>
 		</div>
 	   </div>
 	  </div>
-	    <div class="product_1r1 clearfix">
-		            <div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/6.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 4566</h3>
-						<h4><a class="col_1" href="detail.html">Nibh Elementum</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
-					<div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/7.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 4986</h3>
-						<h4><a class="col_1" href="detail.html">Fusce Nec Tellus</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
-					<div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/8.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 5696</h3>
-						<h4><a class="col_1" href="detail.html">Nulla Quis Sem</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
+	  <div class="cart_3l1 clearfix">
+	   <div class="col-sm-3 space_left">
+	    <div class="cart_3l1i clearfix">
+		 <a href="#"><img src="img/16.jpg" alt="abc" class="iw"></a>		</div>
+	   </div>
+	   <div class="col-sm-9">
+	    <div class="cart_3l1i1 clearfix">
+		 <h5 class="mgt"><a href="#">Naminos elementum disus tincidunts cosmo de cosmopolis</a></h5>
+		 <h5 class="normal">RED / XS</h5>
+		 <h6>Vendor</h6>
+		 <h4>$175.00</h4>
+		 <h5>Quantity</h5>
 		</div>
-		<div class="product_1r1 clearfix">
-		            <div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/9.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 5836</h3>
-						<h4><a class="col_1" href="detail.html">Vestibulum Lacinia</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
-                	<div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/10.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 4566</h3>
-						<h4><a class="col_1" href="detail.html">Nibh Elementum</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
-					<div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/11.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 4986</h3>
-						<h4><a class="col_1" href="detail.html">Fusce Nec Tellus</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
+		<div class="cart_3l1i2 clearfix">
+         <div class="input-group number-spinner">
+				<span class="input-group-btn">
+					<button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+				</span>
+				<input type="text" class="form-control text-center" value="1">
+				<span class="input-group-btn">
+					<button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+				</span>			</div>
+		 <h6 class="mgt"><a class="button_1 mgt" href="#">REMOVE</a></h6>
+         <h6 class="mgt"><a class="button mgt" href="#">UPDATE CART</a></h6>
 		</div>
-		<div class="product_1r1 clearfix">
-		            <div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/12.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 5696</h3>
-						<h4><a class="col_1" href="detail.html">Nulla Quis Sem</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
-					<div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/13.png" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 5836</h3>
-						<h4><a class="col_1" href="detail.html">Vestibulum Lacinia</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
-					<div class="col-sm-4">
-					  <div class="list_2i clearfix mgt-center">
-					    <a href="detail.html"><img src="img/6.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 4566</h3>
-						<h4><a class="col_1" href="detail.html">Nibh Elementum</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
-					  </div>
-					</div>
+	   </div>
+	  </div>
+	  <div class="cart_3l1 border_none pdb clearfix">
+	   <div class="col-sm-3 space_left">
+	    <div class="cart_3l1i clearfix">
+		 <a href="#"><img src="img/17.jpg" alt="abc" class="iw"></a>		</div>
+	   </div>
+	   <div class="col-sm-9">
+	    <div class="cart_3l1i1 clearfix">
+		 <h5 class="mgt"><a href="#">Naminos elementum disus tincidunts cosmo de cosmopolis</a></h5>
+		 <h5 class="normal">RED / XS</h5>
+		 <h6>Vendor</h6>
+		 <h4>$175.00</h4>
+		 <h5>Quantity</h5>
 		</div>
-		<div class="product_1_last text-center clearfix">
-	  <div class="col-sm-12">
-	   <ul>
-	    <li><a href="detail.html"><i class="fa fa-chevron-left"></i></a></li>
-	    <li class="act"><a href="detail.html">1</a></li>
-		<li><a href="detail.html">2</a></li>
-		<li><a href="detail.html">3</a></li>
-		<li><a href="detail.html">4</a></li>
-		<li><a href="detail.html">5</a></li>
-		<li><a href="detail.html">6</a></li>
-		<li><a href="detail.html"><i class="fa fa-chevron-right"></i></a></li>
-	   </ul>
+		<div class="cart_3l1i2 clearfix">
+         <div class="input-group number-spinner">
+				<span class="input-group-btn">
+					<button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+				</span>
+				<input type="text" class="form-control text-center" value="1">
+				<span class="input-group-btn">
+					<button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+				</span>			</div>
+		 <h6 class="mgt"><a class="button_1 mgt" href="#">REMOVE</a></h6>
+         <h6 class="mgt"><a class="button mgt" href="#">UPDATE CART</a></h6>
+		</div>
+	   </div>
 	  </div>
 	 </div>
+	 <div class="col-sm-4">
+	  <div class="cart_3r clearfix">
+	   <h5 class="mgt head_1">SUBTOTAL</h5>
+	   <h3 class="text-center">$1,347.00</h3>
+	   <hr>
+	   <h6>Additional comments</h6>
+	   <textarea class="form-control"></textarea>
+	   <h5 class="text-center"><a class="button" href="checkout.html">PROCEED TO CHECKOUT</a></h5><br>
+	   <h5>GET SHIPPING ESTIMATES</h5>
+	   <hr>
 	  </div>
+	  <div class="cart_3r1 clearfix">
+	    <h6>Country</h6>
+	   <select class="form-control" id="subject" name="subject">
+		<option>America</option>
+		<option>India</option>
+		<option>England</option>
+		<option>Africa</option>
+		</select><br>
+		<h6>State</h6>
+	   <select class="form-control" id="subject" name="subject">
+		<option>Delhi</option>
+		<option>Uttar Pradesh</option>
+		<option>Punjab</option>
+		<option>Madhya Pradesh</option>
+		</select><br>
+	  <h6>Postal/Zip Code</h6>
+	   <input class="form-control" type="text">
+	   <h5 class="text-center"><a class="button_1" href="#">CALCULATE SHIPPING</a></h5>
+	   </div>
 	 </div>
-   </div>
- </div>
-</div>
+	</div>
+  </div>
+ </div>	 
 </section>
 
 <section id="footer">
@@ -611,17 +470,22 @@ $(document).ready(function(){
 });
 </script>
 
-<script src="js/ziehharmonika.js"></script>
-
 <script>
-$(document).ready(function() {
-		$('.ziehharmonika').ziehharmonika({
-			collapsible: true,
-			prefix: '★',
-			scroll: false
-		});
-	});</script>
-
-</body>
- 
-</html>
+	$(document).on('click', '.number-spinner button', function () {    
+	var btn = $(this),
+		oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+		newVal = 0;
+	
+	if (btn.attr('data-dir') == 'up') {
+		newVal = parseInt(oldValue) + 1;
+	} else {
+		if (oldValue > 1) {
+			newVal = parseInt(oldValue) - 1;
+		} else {
+			newVal = 1;
+		}
+	}
+	btn.closest('.number-spinner').find('input').val(newVal);
+});
+</script>
+</asp:Content>

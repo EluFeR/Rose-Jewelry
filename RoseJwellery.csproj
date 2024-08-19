@@ -171,6 +171,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\userList.aspx" />
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
     <Content Include="cart.html" />
@@ -197,7 +198,7 @@
     <Content Include="css\login.css" />
     <Content Include="Register.aspx" />
     <Content Include="OldDefault.aspx" />
-    <Content Include="detail.html" />
+    <Content Include="olddetail.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -221,6 +222,8 @@
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Admin\RJewelleryAdmin.Master" />
+    <Content Include="Detail.aspx" />
+    <Content Include="Cart.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="img\1.jpg" />
     <Content Include="img\10.jpg" />
@@ -434,6 +437,13 @@
     <Compile Include="Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\userList.aspx.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\userList.aspx.designer.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -520,6 +530,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
