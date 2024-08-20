@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    section id="menu" class="clearfix cd-secondary-nav">
+    <section id="menu" class="clearfix cd-secondary-nav">
 	<nav class="navbar nav_t">
 		<div class="container">
 		    <div class="navbar-header page-scroll">
@@ -310,7 +310,7 @@
 	  </div>
 	  <div class="cart_3r1 clearfix">
 	    <h6>Country</h6>
-	   <select class="form-control" id="subject" name="subject">
+	   <select class="form-control" id="subjects" name="subject">
 		<option>America</option>
 		<option>India</option>
 		<option>England</option>
