@@ -171,7 +171,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Admin\Default2.aspx" />
+    <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\userList.aspx" />
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
@@ -431,12 +431,12 @@
     <Compile Include="Admin\RJewelleryAdmin.Master.designer.cs">
       <DependentUpon>RJewelleryAdmin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Default2.aspx.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Default2.aspx.designer.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\userList.aspx.cs">
       <DependentUpon>userList.aspx</DependentUpon>

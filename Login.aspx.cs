@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNet.Identity.Owin;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace RoseJwellery
 {
@@ -31,28 +28,41 @@ namespace RoseJwellery
                 switch (result)
                 {
                     case SignInStatus.Success:
-                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
-                        break;
-                    case SignInStatus.LockedOut:
-                        Response.Redirect("/Account/Lockout");
-                        break;
-                    case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}",
-                                                        Request.QueryString["ReturnUrl"],
-                                                        checkRemember.Checked),
-                                          true);
-                        break;
+
+                      
+                        bool enabled = false;
+                       
+                            var currentUser = manager.FindByName(TextEmail.Text);
+                            enabled = currentUser.enabled;
+                        
+
+                        if (enabled == true)
+                        {
+                            IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                            break;
+                        }
+                        else
+                        {
+                            // the user is disabled
+                            h5Message.InnerText = "The user is disabled. please contact administrator!";
+                            h5Message.Attributes.Add("class", "text-danger");
+                            LogoutUser();
+                            break;
+                        }
+
                     case SignInStatus.Failure:
                     default:
                         h5Message.InnerText = "Invalid login attempt";
-                        h5Message.Attributes.Add("class","text-danger");
+                        h5Message.Attributes.Add("class", "text-danger");
                         break;
                 }
             }
 
+        }
 
-
-
+        private void LogoutUser()
+        {
+            Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }
     }
 }

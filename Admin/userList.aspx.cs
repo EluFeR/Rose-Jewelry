@@ -34,7 +34,7 @@ namespace RoseJwellery.Admin
                 u.UserName,
                 u.Email,
                 u.PhoneNumber,
-                u.LockoutEnabled
+                u.enabled
             }).ToList();
 
             // Bind the user data to the GridView
@@ -42,9 +42,9 @@ namespace RoseJwellery.Admin
             GridView1.DataBind();
         }
 
-        public string GetUserStatus(bool lockoutEnabled)
+        public string GetUserStatus(bool enabled)
         {
-            return lockoutEnabled ? "Disabled" : "Enabled";
+            return enabled ? "Enabled" : "Disabled";
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -58,16 +58,13 @@ namespace RoseJwellery.Admin
                 if (user != null)
                 {
                     if (e.CommandName == "EnableUser")
-                    {
-                        // Disable lockout
-                        user.LockoutEnabled = false;
-                        user.LockoutEndDateUtc = null;
+                    {                        
+                        user.enabled = true;
+                        
                     }
                     else if (e.CommandName == "DisableUser")
-                    {
-                        // Enable lockout indefinitely
-                        user.LockoutEnabled = true;
-                        user.LockoutEndDateUtc = DateTime.UtcNow.AddYears(100);
+                    {                        
+                        user.enabled = false;
                     }
 
                     // Update the user

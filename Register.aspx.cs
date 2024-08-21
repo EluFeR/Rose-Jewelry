@@ -30,6 +30,7 @@ namespace RoseJwellery
                 UserName = TextEmail.Text,
                 Email = TextEmail.Text,
                 FullName = TextFName.Text +" "+ TextLName.Text,
+                
                 enabled = true
             };
 

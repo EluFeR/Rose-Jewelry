@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|c:\\users\\hp\\documents\\github\\rose-jewelry\\admin\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:admin\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|c:\\users\\hp\\documents\\github\\rose-jewelry\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\admin\\userlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:admin\\userlist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\admin\\default2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:admin\\default2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\admin\\rjewelleryadmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:admin\\rjewelleryadmin.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|c:\\users\\hp\\documents\\github\\rose-jewelry\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|c:\\users\\hp\\documents\\github\\rose-jewelry\\admin\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:admin\\userlist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|c:\\users\\hp\\documents\\github\\rose-jewelry\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|c:\\users\\hp\\documents\\github\\rose-jewelry\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|solutionrelative:models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{453A4827-3D96-468A-8F86-6CC61F52A46D}|RoseJwellery.csproj|C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -38,23 +50,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Login.aspx.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Login.aspx.cs",
+              "RelativeToolTip": "Login.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:13:24.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Login.aspx",
+              "RelativeDocumentMoniker": "Login.aspx",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Login.aspx",
+              "RelativeToolTip": "Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-08-21T07:32:23.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Register.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Register.aspx.cs",
+              "RelativeDocumentMoniker": "Register.aspx.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Register.aspx.cs",
+              "RelativeToolTip": "Register.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:42:33.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IdentityModels.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Models\\IdentityModels.cs",
+              "RelativeDocumentMoniker": "Models\\IdentityModels.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Models\\IdentityModels.cs",
+              "RelativeToolTip": "Models\\IdentityModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T07:36:39.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "cart.html",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\cart.html",
               "RelativeDocumentMoniker": "cart.html",
               "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\cart.html",
               "RelativeToolTip": "cart.html",
-              "ViewState": "AQIAAA0CAAAAAAAAAAAAACACAAAKAAAA",
+              "ViewState": "AgIAAA0CAAAAAAAAAAAAACACAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-15T13:31:42.264Z"
+              "WhenOpened": "2024-08-15T13:31:42.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Cart.aspx",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Cart.aspx",
               "RelativeDocumentMoniker": "Cart.aspx",
@@ -62,19 +127,21 @@
               "RelativeToolTip": "Cart.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-15T13:29:12.727Z"
+              "WhenOpened": "2024-08-15T13:29:12.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "olddetail.html",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\olddetail.html",
               "RelativeDocumentMoniker": "olddetail.html",
               "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\olddetail.html",
               "RelativeToolTip": "olddetail.html",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAwEwAAAArAAAA",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwEwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-15T13:08:49.147Z"
+              "WhenOpened": "2024-08-15T13:08:49.147Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -84,18 +151,19 @@
               "RelativeDocumentMoniker": "Admin\\userList.aspx.cs",
               "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\userList.aspx.cs",
               "RelativeToolTip": "Admin\\userList.aspx.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA5wC0AAAAJAAAA",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwD4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T11:06:09.238Z"
+              "WhenOpened": "2024-08-15T11:06:09.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "userList.aspx",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\userList.aspx",
               "RelativeDocumentMoniker": "Admin\\userList.aspx",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\userList.aspx*",
-              "RelativeToolTip": "Admin\\userList.aspx*",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\userList.aspx",
+              "RelativeToolTip": "Admin\\userList.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-08-15T11:03:55.829Z",
@@ -104,23 +172,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Default2.aspx",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\Default2.aspx",
-              "RelativeDocumentMoniker": "Admin\\Default2.aspx",
-              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\Default2.aspx",
-              "RelativeToolTip": "Admin\\Default2.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-14T12:53:37.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "RJewelleryAdmin.Master",
               "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\RJewelleryAdmin.Master",
               "RelativeDocumentMoniker": "Admin\\RJewelleryAdmin.Master",
               "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\Rose-Jewelry\\Admin\\RJewelleryAdmin.Master",
               "RelativeToolTip": "Admin\\RJewelleryAdmin.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-08-14T12:50:54.931Z",
               "EditorCaption": ""
