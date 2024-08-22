@@ -11,7 +11,7 @@ namespace RoseJwellery
 {
 
 
-    public partial class About
+    public partial class Checkout
     {
     }
 }
