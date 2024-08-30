@@ -24,75 +24,66 @@ namespace RoseJwellery.Admin
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl h5Message;
 
         /// <summary>
-        /// TextFName control.
+        /// TextPName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextFName;
+        protected global::System.Web.UI.WebControls.TextBox TextPName;
 
         /// <summary>
-        /// TextLName control.
+        /// TextDesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextLName;
+        protected global::System.Web.UI.WebControls.TextBox TextDesc;
 
         /// <summary>
-        /// TextEmail control.
+        /// Textprice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextEmail;
+        protected global::System.Web.UI.WebControls.TextBox Textprice;
 
         /// <summary>
-        /// TextBox1 control.
+        /// Textcatg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox Textcatg;
 
         /// <summary>
-        /// TextPassword control.
+        /// TextStQ control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextPassword;
+        protected global::System.Web.UI.WebControls.TextBox TextStQ;
 
         /// <summary>
-        /// TextCpassword control.
+        /// btnRegisterProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextCpassword;
+        protected global::System.Web.UI.WebControls.Button btnRegisterProduct;
 
         /// <summary>
-        /// CompareValidator1 control.
+        /// GridViewProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
-
-        /// <summary>
-        /// btnCreate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCreate;
+        protected global::System.Web.UI.WebControls.GridView GridViewProduct;
     }
 }

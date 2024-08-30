@@ -20,7 +20,7 @@ namespace RoseJwellery.Admin
 
         private void BindCategoryGrid()
         {
-            // Getrose jewelley contyext
+            // Getrose jewelley context
             var _context = new Rose_JewelleryEntities();
             
 
