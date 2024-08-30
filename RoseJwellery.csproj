@@ -68,6 +68,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
@@ -170,8 +171,10 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\userList.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
     <Content Include="cart.html" />
@@ -281,11 +284,28 @@
     <Content Include="js\ziehharmonika.js" />
     <Content Include="login.html" />
     <Content Include="product.html" />
+    <Content Include="Models\RoseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoseModel.edmx</DependentUpon>
+      <LastGenOutput>RoseModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\RoseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoseModel.edmx</DependentUpon>
+      <LastGenOutput>RoseModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Cart.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Checkout.aspx" />
+    <EntityDeploy Include="Models\RoseModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RoseModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\RoseModel.edmx.diagram">
+      <DependentUpon>RoseModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
@@ -425,6 +445,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\RJewelleryAdmin.Master.cs">
       <DependentUpon>RJewelleryAdmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -446,16 +473,56 @@
     <Compile Include="Admin\userList.aspx.designer.cs">
       <DependentUpon>userList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetRoleClaim.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserToken.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Order.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>RoseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -482,6 +549,21 @@
     </Compile>
     <Compile Include="RJewellery.Master.designer.cs">
       <DependentUpon>RJewellery.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoseModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -568,6 +650,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
