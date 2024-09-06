@@ -140,6 +140,7 @@
     <Property Name="ImageURL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Category" Relationship="Self.FK__Products__Catego__4BAC3F29" FromRole="Products" ToRole="Categories" />
     <NavigationProperty Name="OrderDetails" Relationship="Self.FK__OrderDeta__Produ__5441852A" FromRole="Products" ToRole="OrderDetails" />
+    <Property Name="Image2URL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK__AspNetRol__RoleI__68487DD7">
     <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="1">

@@ -27,6 +27,7 @@ namespace RoseJwellery.Models
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
         public string ImageURL { get; set; }
+        public string Image2URL { get; set; }
     
         public virtual Category Category { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

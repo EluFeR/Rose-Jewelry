@@ -130,6 +130,7 @@
     <Property Name="Price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="StockQuantity" Type="int" Nullable="false" />
     <Property Name="ImageURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Image2URL" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <Association Name="FK__AspNetRol__RoleI__68487DD7">
     <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">

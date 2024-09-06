@@ -135,6 +135,7 @@
           <Property Name="Price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="StockQuantity" Type="int" Nullable="false" />
           <Property Name="ImageURL" Type="nvarchar" MaxLength="255" />
+          <Property Name="Image2URL" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <Association Name="FK__AspNetRol__RoleI__68487DD7">
           <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
@@ -466,6 +467,7 @@
           <Property Name="ImageURL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Category" Relationship="Self.FK__Products__Catego__4BAC3F29" FromRole="Products" ToRole="Categories" />
           <NavigationProperty Name="OrderDetails" Relationship="Self.FK__OrderDeta__Produ__5441852A" FromRole="Products" ToRole="OrderDetails" />
+          <Property Name="Image2URL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK__AspNetRol__RoleI__68487DD7">
           <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="1">
@@ -751,6 +753,7 @@
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="Rose_JewelleryModel.Product">
               <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="Image2URL" ColumnName="Image2URL" />
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
                 <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
