@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-
+    <asp:ScriptManager runat="server" ID="scriptManager1"></asp:ScriptManager>
 
     <section id="center" class="clearfix center_prod">
         <div class="container">
@@ -21,97 +21,109 @@
     <section id="register">
         <div class="container">
             <div class="row">
-                <div class="register_1 clearfix">
-                    <div class="col-sm-6 space_left">
-                        <div class="register_1l clearfix">
-                            <div class="register_1li clearfix">
 
-                                <h3 class="mgt">Register a new product</h3>
-                                <p>Fill the product details below</p>
 
-                                <h5 runat="server" id="h5Message" class="text-success"></h5>
-                            </div>
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-6 space_left">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>ProductName</h5>
-                                        <asp:TextBox ID="TextPName" class="form-control" runat="server" required="required"></asp:TextBox>
+                <asp:UpdatePanel runat="server" ID="updatePanelForm" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <div class="register_1 clearfix">
+                            <div class="col-sm-6 space_left">
+                                <asp:HiddenField runat="server" ID="hiddenProductId" />
+
+                                <div class="register_1l clearfix">
+                                    <div class="register_1li clearfix">
+
+                                        <h3 class="mgt">Register a new product</h3>
+                                        <p>Fill the product details below</p>
+
+                                        <h5 runat="server" id="h5Message" class="text-success"></h5>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-12 space_all">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>Description *</h5>
-                                        <asp:TextBox ID="TextDesc" class="form-control" runat="server" required="required"></asp:TextBox>
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-6 space_left">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>ProductName</h5>
+                                                <asp:TextBox ID="TextPName" class="form-control" runat="server" required="required"></asp:TextBox>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-12 space_all">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>Price *</h5>
-                                        <asp:TextBox ID="Textprice" class="form-control" runat="server" required="required"></asp:TextBox>
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-12 space_all">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>Description *</h5>
+                                                <asp:TextBox ID="TextDesc" class="form-control" runat="server" required="required"></asp:TextBox>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-12 space_all">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>Catagory*</h5>
-                                        <asp:DropDownList ID="DropListCategory" class="form-control" runat="server"
-                                            DataSourceID="SqlDataSourceCategory"
-                                            DataTextField="CategoryName"
-                                            DataValueField="CategoryID">
-                                        </asp:DropDownList>
 
-                                        <asp:SqlDataSource ID="SqlDataSourceCategory" runat="server"
-                                            ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
-                                            SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
-
-
-
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-12 space_all">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>Price *</h5>
+                                                <asp:TextBox ID="Textprice" class="form-control" runat="server" required="required"></asp:TextBox>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-12 space_all">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>StockQuantity *</h5>
-                                        <asp:TextBox ID="TextStQ" class="form-control" runat="server" required="required"></asp:TextBox>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-12 space_all">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>Image 1 *</h5>
-                                        <asp:FileUpload ID="FileUpload1" runat="server" accept=".jpg,.jpeg,.png,.gif,.bmp" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="register_1li1 clearfix">
-                                <div class="col-sm-12 space_all">
-                                    <div class="register_1li1l clearfix">
-                                        <h5>Image 2 *</h5>
-                                        <asp:FileUpload ID="FileUpload2" runat="server" />
-                                    </div>
-                                </div>
-                            </div>
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-12 space_all">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>Catagory*</h5>
+                                                <asp:DropDownList ID="DropListCategory" class="form-control" runat="server"
+                                                    DataSourceID="SqlDataSourceCategory"
+                                                    DataTextField="CategoryName"
+                                                    DataValueField="CategoryID">
+                                                </asp:DropDownList>
 
-                            <br />
-                            <asp:Button ID="btnRegisterProduct" CssClass="btn btn-sm btn-success" runat="server" Text="Register Product"
-                                OnClick="btnRegisterProduct_Click" />
+                                                <asp:SqlDataSource ID="SqlDataSourceCategory" runat="server"
+                                                    ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
+                                                    SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
 
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-12 space_all">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>StockQuantity *</h5>
+                                                <asp:TextBox ID="TextStQ" class="form-control" runat="server" required="required"></asp:TextBox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-12 space_all">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>Image 1 *</h5>
+                                                <asp:FileUpload ID="FileUpload1" runat="server" accept=".jpg,.jpeg,.png,.gif,.bmp" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="register_1li1 clearfix">
+                                        <div class="col-sm-12 space_all">
+                                            <div class="register_1li1l clearfix">
+                                                <h5>Image 2 *</h5>
+                                                <asp:FileUpload ID="FileUpload2" runat="server" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <asp:Button ID="btnRegisterProduct" CssClass="btn btn-sm btn-success" runat="server" Text="Register Product"
+                                        OnClick="btnRegisterProduct_Click" />
+
+                                </div>
+
+                            </div>
                         </div>
-
-                    </div>
-                </div>
+                    </ContentTemplate>
+                    <Triggers>
+                        <asp:PostBackTrigger ControlID="btnRegisterProduct" />
+                    </Triggers>
+                </asp:UpdatePanel>
 
                 <div style="width: 100%">
-                    <asp:ScriptManager runat="server" ID="scriptManager1"></asp:ScriptManager>
-                    <asp:UpdatePanel runat="server" ID="updatePanelgrid">
+
+
+                    <asp:UpdatePanel runat="server" ID="updatePanelGrid">
                         <ContentTemplate>
 
                             <h2>Product List</h2>
@@ -119,6 +131,7 @@
                             <asp:GridView ViewStateMode="Enabled" CssClass="table" ID="GridViewProduct" runat="server" AutoGenerateColumns="False" Width="100%"
                                 OnRowCommand="GridViewProduct_RowCommand"
                                 OnRowDeleting="GridViewProduct_RowDeleting"
+                                OnRowEditing="GridViewProduct_RowEditing"
                                 CellPadding="4" ForeColor="#333333" GridLines="None">
                                 <AlternatingRowStyle BackColor="White" />
                                 <Columns>
@@ -140,7 +153,7 @@
 
                                     <asp:TemplateField>
                                         <ItemTemplate>
-                                            <asp:Button CssClass="btn btn-primary" ID="btnEdit" runat="server" Text="Edit" CommandName="Edit" CommandArgument='<%# Eval("ProductID") %>' formnovalidate />
+                                            <asp:Button CssClass="btn btn-primary" ID="btnEdit" runat="server" Text="Edit" CommandName="EditC" CommandArgument='<%# Eval("ProductID") %>' formnovalidate />
                                             <asp:Button CssClass="btn btn-danger" ID="btnDelete" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("ProductID") %>' formnovalidate />
                                         </ItemTemplate>
                                     </asp:TemplateField>
@@ -156,13 +169,11 @@
                                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
                             </asp:GridView>
-
                         </ContentTemplate>
-
                     </asp:UpdatePanel>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
 
 </asp:Content>

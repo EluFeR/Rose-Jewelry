@@ -49,7 +49,7 @@ namespace RoseJwellery.Admin
         protected void GridViewProduct_RowCommand(object sender, GridViewCommandEventArgs e)
         {
 
-            if (e.CommandName == "Edit" || e.CommandName == "Delete")
+            if (e.CommandName == "EditC" || e.CommandName == "Delete")
             {
 
                 if(e.CommandName == "Delete")
@@ -91,8 +91,13 @@ namespace RoseJwellery.Admin
                     Textprice.Text = prod.Price.ToString();
                     DropListCategory.SelectedValue = prod.CategoryID.ToString();
                     TextStQ.Text = prod.StockQuantity.ToString();
+                    hiddenProductId.Value = ToEditId;
+
 
                     btnRegisterProduct.Text = "Update Product";
+                    h5Message.InnerText = "Update the selected product below:";
+                    updatePanelForm.Update();
+                    
 
                 }
 
@@ -107,35 +112,75 @@ namespace RoseJwellery.Admin
 
             try
             {
-                var _context = new Rose_JewelleryEntities();
+                if (btnRegisterProduct.Text == "Update Product")
+                {
+                    var _context = new Rose_JewelleryEntities();
+                    int IdtoEdit = Convert.ToInt32(hiddenProductId.Value);
 
-                Product pdct = new Product();
-                pdct.ProductName = TextPName.Text;
-                pdct.Description = TextDesc.Text;
-                pdct.Price = Convert.ToDecimal(Textprice.Text);
-                pdct.CategoryID = Convert.ToInt32(DropListCategory.SelectedValue);
-                pdct.StockQuantity = Convert.ToInt32(TextStQ.Text);
+                    var prod = _context.Products.FirstOrDefault(p => p.ProductID == IdtoEdit);
+                    if (prod != null)
+                    {
+                        prod.ProductName = TextPName.Text;
+                        prod.Description = TextDesc.Text;
+                        prod.Price = Convert.ToDecimal(Textprice.Text);
+                        prod.CategoryID = Convert.ToInt32(DropListCategory.SelectedValue);
+                        prod.StockQuantity = Convert.ToInt32(TextStQ.Text);
+                        //best collection
+                        //new arrival
 
-                string ImagePath1 = UploadFile(FileUpload1);
-                string ImagePath2 = UploadFile(FileUpload2);
+                        string ImagePath1 = UploadFile(FileUpload1);
+                        string ImagePath2 = UploadFile(FileUpload2);
 
-                pdct.ImageURL = ImagePath1;
-                pdct.Image2URL = ImagePath2;
+                        prod.ImageURL = ImagePath1;
+                        prod.Image2URL = ImagePath2;
 
-                _context.Products.Add(pdct);
-                _context.SaveChanges();
+                        _context.SaveChanges();
 
-                h5Message.Attributes.Add("class", "text-success");
-                h5Message.InnerText = "Product registered successfully";
-                _context.Dispose();
+                        ///
+                        h5Message.Attributes.Add("class", "text-success");
+                        h5Message.InnerText = "Updated succesfully";
+                        btnRegisterProduct.Text = "Register Product";
+                        TextPName.Focus();
+                        _context.Dispose();
 
-                BindProductGrid();
+                        BindProductGrid();
+                    }
+                }
+                else
+                {
+
+                    var _context = new Rose_JewelleryEntities();
+
+                    Product pdct = new Product();
+                    pdct.ProductName = TextPName.Text;
+                    pdct.Description = TextDesc.Text;
+                    pdct.Price = Convert.ToDecimal(Textprice.Text);
+                    pdct.CategoryID = Convert.ToInt32(DropListCategory.SelectedValue);
+                    pdct.StockQuantity = Convert.ToInt32(TextStQ.Text);
+
+                    string ImagePath1 = UploadFile(FileUpload1);
+                    string ImagePath2 = UploadFile(FileUpload2);
+
+                    pdct.ImageURL = ImagePath1;
+                    pdct.Image2URL = ImagePath2;
+
+                    _context.Products.Add(pdct);
+                    _context.SaveChanges();
+
+                    h5Message.Attributes.Add("class", "text-success");
+                    h5Message.InnerText = "Product registered successfully";
+                    TextPName.Focus();
+                    _context.Dispose();
+
+                    BindProductGrid();
+                }
             }
             catch(Exception ex)
             {
                 h5Message.InnerText = ex.Message;
 
                 h5Message.Attributes.Add("class", "text-danger");
+                TextPName.Focus();
             }
 
 
@@ -194,6 +239,11 @@ namespace RoseJwellery.Admin
         }
 
         protected void GridViewProduct_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void GridViewProduct_RowEditing(object sender, GridViewEditEventArgs e)
         {
 
         }

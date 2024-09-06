@@ -15,6 +15,33 @@ namespace RoseJwellery.Admin
     {
 
         /// <summary>
+        /// scriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager scriptManager1;
+
+        /// <summary>
+        /// updatePanelForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanelForm;
+
+        /// <summary>
+        /// hiddenProductId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hiddenProductId;
+
+        /// <summary>
         /// h5Message control.
         /// </summary>
         /// <remarks>
@@ -105,22 +132,13 @@ namespace RoseJwellery.Admin
         protected global::System.Web.UI.WebControls.Button btnRegisterProduct;
 
         /// <summary>
-        /// scriptManager1 control.
+        /// updatePanelGrid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager scriptManager1;
-
-        /// <summary>
-        /// updatePanelgrid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel updatePanelgrid;
+        protected global::System.Web.UI.UpdatePanel updatePanelGrid;
 
         /// <summary>
         /// h5Gridmessage control.
