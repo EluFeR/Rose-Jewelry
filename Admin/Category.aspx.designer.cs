@@ -15,6 +15,33 @@ namespace RoseJwellery.Admin
     {
 
         /// <summary>
+        /// scriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager scriptManager1;
+
+        /// <summary>
+        /// updatePanelForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanelForm;
+
+        /// <summary>
+        /// hiddenCategoryId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hiddenCategoryId;
+
+        /// <summary>
         /// h5Message control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace RoseJwellery.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSaveCategory;
+
+        /// <summary>
+        /// h5Gridmessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl h5Gridmessage;
 
         /// <summary>
         /// GridViewCategory control.
