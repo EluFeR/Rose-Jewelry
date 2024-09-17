@@ -178,12 +178,13 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
+
 					<div class="col-sm-3">
 					  <div class="list_2i clearfix mgt-center">
 					    <a href="#"><img src="img/6.jpg" class="iw" alt="abc"></a>
-						<h3><i class="fa fa-rupee"></i> 4566</h3>
+						<h3>ETB 4566</h3>
 						<h4><a class="col_1" href="#">Nibh Elementum</a></h4>
-						<h6>Product Code: 12LDSJECR03</h6>
+						<h6>Product Category: category</h6>
 					  </div>
 					</div>
 					<div class="col-sm-3">
@@ -211,6 +212,7 @@
 					  </div>
 					</div>
                 </div>
+
                 <div class="item">
 					<div class="col-sm-3">
 					  <div class="list_2i clearfix mgt-center">
