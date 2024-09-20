@@ -13,5 +13,23 @@ namespace RoseJwellery
 
     public partial class Cart
     {
+
+        /// <summary>
+        /// h3SubTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl h3SubTotal;
+
+        /// <summary>
+        /// btnUpdateCart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdateCart;
     }
 }

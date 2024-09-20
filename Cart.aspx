@@ -39,16 +39,13 @@
 
                         <div id="cartItemsList" class="cart_3l1 clearfix">
 
-
-
-
                            
                         </div>
                         </div>
                          <div class="col-sm-4">
                          <div class="cart_3r clearfix">
                              <h5 class="mgt head_1">SUBTOTAL</h5>
-                             <h3 class="text-center">$1,347.00</h3>
+                             <h3 runat="server" id="h3SubTotal" class="text-center">SUBTOTAL</h3>
                              <hr>
 
                               <h6>Additional comments</h6>
@@ -57,6 +54,8 @@
 
                          </div>
                              </div>
+
+                    
  
     </section>
 
@@ -134,8 +133,11 @@
                 <button onclick="return false;" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
               </span>
             </div>
-            <h6 class="mgt"><a class="button_1 mgt" href="#">REMOVE</a></h6>
-            <h6 class="mgt"><a class="button mgt" href="#">UPDATE CART</a></h6>
+            <h6 class="mgt">
+            <asp:butt class="button_1 mgt" href="#">REMOVE</a></h6>
+
+            <h6 class="mgt"><asp:Button runat="server" ID="btnUpdateCart" CssClass="button" Text="Update Cart" OnClick="btnUpdateCart_Click"
+              CommandArgument = "${tem.ProductID}|${item.OrderQuantity}"> </asp:Button></h6>
           </div>
         </div>
         <br/><br/><p>&nbsp; </p>      
@@ -144,6 +146,7 @@
                 cartItemsList.innerHTML += productHtml;
             });
         };
-</script>
+        
+    </script>
 
 </asp:Content>

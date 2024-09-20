@@ -22,7 +22,31 @@ namespace RoseJwellery
 
                 ClientScript.RegisterStartupScript(this.GetType(), "populateCart", $"var ProductTemps = {productJson};", true);
 
+                CalculateSubTotal(ProductTemps);
+
             }
+        }
+
+        private void CalculateSubTotal(List<ProductTemp> productTemps)
+        {
+            double total = 0;
+            double Gtotal = 0;
+
+            foreach(ProductTemp productTemp in productTemps)
+            {
+                total = Convert.ToDouble(productTemp.Price * productTemp.OrderQuantity);
+                Gtotal += total;
+            }
+
+            h3SubTotal.InnerText = "ETB " + Gtotal.ToString();
+
+
+        }
+
+        protected void btnUpdateCart_Click(object sender, EventArgs e)
+        {
+            // do  update the cart
+            
         }
     }
 }
