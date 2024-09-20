@@ -38,25 +38,66 @@
                         </div>
 
                         <div id="cartItemsList" class="cart_3l1 clearfix">
+                        <asp:Repeater ID="rptCartItems" runat="server">
 
-                           
-                        </div>
-                        </div>
-                         <div class="col-sm-4">
-                         <div class="cart_3r clearfix">
-                             <h5 class="mgt head_1">SUBTOTAL</h5>
-                             <h3 runat="server" id="h3SubTotal" class="text-center">SUBTOTAL</h3>
-                             <hr>
+                                <ItemTemplate>
 
-                              <h6>Additional comments</h6>
-                             <textarea class="form-control"></textarea>
-                             <h5 class="text-center"><a class="button" href="checkout.html">PROCEED TO CHECKOUT</a></h5><br>
+                                    <div class="col-sm-3 space_left">
+                                        <div class="cart_3l1i clearfix">
+                                            <a href="#">
+                                                <img src='<%# Eval("ImageURL") %>' alt="abc" class="iw"></a>
+                                        </div>
+                                    </div>
 
-                         </div>
-                             </div>
+                                    <div class="col-sm-9">
+                                        <div class="cart_3l1i1 clearfix">
+                                            <h5 class="mgt"><a href="#"><%# Eval("ProductName") %></a></h5>
+                                            <h5 class="normal"><%# Eval("CategoryName") %></h5>
+                                            <h6><%# Eval("Description") %></h6>
+                                            <h4>$<%# Eval("Price", "{0:F2}") %></h4>
+                                            <h5>Order Quantity</h5>
+                                        </div>
 
+
+                                        <div class="input-group number-spinner">
+                                            <asp:TextBox ID="txtOrderQuantity" runat="server" CssClass="form-control text-center" Text='<%# Eval("OrderQuantity") %>'></asp:TextBox>
+                                            <asp:HiddenField ID="hfProductID" runat="server" Value='<%# Eval("ProductID") %>' />
+
+
+                                            <div class="cart_3l1i2 clearfix">
+                                                
                     
- 
+                                                <asp:Button ID="btnUpdateCart" runat="server" CssClass="button" Text="Update Cart"
+                                                    OnClick="btnUpdateCart_Click" />
+                                                 <asp:Button ID="Button1" runat="server" CssClass="button_1 mgt" Text="Remove"
+                                                   OnClick="btnUpdateCart_Click" />
+                                            </div>
+                                            
+
+                                        </div>
+                                        <hr />
+                                    </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="cart_3r clearfix">
+                            <h5 class="mgt head_1">SUBTOTAL</h5>
+                            <h3 runat="server" id="h3SubTotal" class="text-center">SUBTOTAL</h3>
+                            <hr>
+
+                            <h6>Additional comments</h6>
+                            <textarea class="form-control"></textarea>
+                            <h5 class="text-center"><a class="button" href="checkout.html">PROCEED TO CHECKOUT</a></h5>
+                            <br>
+                        </div>
+                    </div>
+                    </div>
+                    
     </section>
 
     <script type="text/javascript">
@@ -104,7 +145,7 @@
         // JavaScript code to populate the cartItemsList
         window.onload = function () {
             var cartItemsList = document.getElementById('cartItemsList');
-            cartItemsList.innerHTML = '';
+            //cartItemsList.innerHTML = '';
 
             ProductTemps.forEach(function (item) {
                 var productHtml = `
@@ -128,25 +169,33 @@
               <span class="input-group-btn">
                 <button onclick = "return false;" class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
               </span>
-              <input type="text" class="form-control text-center" value="${item.OrderQuantity}">
+
+               <input type="text" id="orderQuantity_${item.ProductID}" class="form-control text-center" value="${item.OrderQuantity}">
+
               <span class="input-group-btn">
                 <button onclick="return false;" class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
               </span>
             </div>
+            <h6 class="mgt"> <asp:Button runat="server"  CssClass="button_1 mgt" Text="Remove"
+ CommandArgument = "${item.ProductID}"           
+ OnClick="btnUpdateCart_Click" /> </h6>        
             <h6 class="mgt">
-            <asp:butt class="button_1 mgt" href="#">REMOVE</a></h6>
-
-            <h6 class="mgt"><asp:Button runat="server" ID="btnUpdateCart" CssClass="button" Text="Update Cart" OnClick="btnUpdateCart_Click"
-              CommandArgument = "${tem.ProductID}|${item.OrderQuantity}"> </asp:Button></h6>
+               <asp:Button runat="server"  CssClass="button" Text="Update Cart"
+                CommandArgument = '${item.Price}'       
+                OnClick="btnUpdateCart_Click" />            
+            </h6>
           </div>
         </div>
         <br/><br/><p>&nbsp; </p>      
-      `;
+     `;
 
-                cartItemsList.innerHTML += productHtml;
+                //cartItemsList.innerHTML += productHtml;
             });
         };
-        
+
     </script>
+
+
+
 
 </asp:Content>

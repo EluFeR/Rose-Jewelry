@@ -38,6 +38,7 @@ namespace RoseJwellery
                 var product = context.Products.FirstOrDefault(p => p.ProductID == productId);
                 if (product != null)
                 {
+                    ProductToAdd.ProductID = productId;
                     ProductToAdd.ProductName = product.ProductName;
                     ProductToAdd.CategoryName = product.Category.CategoryName;
                     ProductToAdd.ImageURL = product.ImageURL;
