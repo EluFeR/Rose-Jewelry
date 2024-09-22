@@ -21,12 +21,14 @@ namespace RoseJwellery.Models
         }
     
         public int OrderID { get; set; }
-        public Nullable<int> CustomerID { get; set; }
         public System.DateTime OrderDate { get; set; }
         public decimal TotalAmount { get; set; }
         public string OrderStatus { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string City { get; set; }
     
-        public virtual Customer Customer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }

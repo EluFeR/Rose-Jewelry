@@ -112,17 +112,19 @@
       <EntityTypeMapping TypeName="Rose_JewelleryModel.Order">
         <MappingFragment StoreEntitySet="Orders">
           <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
           <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
           <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
           <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="Rose_JewelleryModel.Product">
         <MappingFragment StoreEntitySet="Products">
-          <ScalarProperty Name="Image2URL" ColumnName="Image2URL" />
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
           <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
@@ -130,6 +132,7 @@
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="StockQuantity" ColumnName="StockQuantity" />
           <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="Image2URL" ColumnName="Image2URL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

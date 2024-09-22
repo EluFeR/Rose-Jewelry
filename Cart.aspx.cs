@@ -99,6 +99,43 @@ namespace RoseJwellery
             }
         }
 
+        private void DeleteFromCart(int productId)
+        {
+
+            if (Session["cart"] != null)
+            {
+                ProductTemps = (List<ProductTemp>)Session["cart"];
+
+                ProductTemp tmp = new ProductTemp();
+
+
+                tmp = ProductTemps.FirstOrDefault(p => p.ProductID == productId);
+                ProductTemps.Remove(tmp);
+
+                Session["cart"] = ProductTemps;
+                CalculateSubTotal(ProductTemps);
+
+                rptCartItems.DataSource = ProductTemps; // Replace with your data source
+                rptCartItems.DataBind();
+            }
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            // Get the Button that triggered the event
+            Button btn = (Button)sender;
+
+            // Find the RepeaterItem that contains this button
+            RepeaterItem item = (RepeaterItem)btn.NamingContainer;
+
+            HiddenField hfProductID = (HiddenField)item.FindControl("hfProductID");
+            int productId = Convert.ToInt32(hfProductID.Value);
+
+            DeleteFromCart(productId);
+
+            
+        }
+
         // Process the productId and orderQuantity
         // Your logic to update the cart here
 

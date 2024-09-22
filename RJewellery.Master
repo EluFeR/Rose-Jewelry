@@ -125,7 +125,7 @@
                                     <ul class="dropdown-menu drop_3" role="menu">
 
                                         <li><a href="Cart.aspx">Shopping Cart</a></li>
-                                        <li><a class="border_none" href="checkout.html">Checkout</a></li>
+                                        <li><a class="border_none" href="Checkout.aspx">Checkout</a></li>
                                     </ul>
                                 </li>
                             

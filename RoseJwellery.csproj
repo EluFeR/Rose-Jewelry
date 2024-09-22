@@ -171,12 +171,24 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\ViewOrder.aspx" />
     <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\userList.aspx" />
     <Content Include="Admin\AddProduct.aspx" />
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
+    <Content Include="Models\RoseModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoseModel.edmx</DependentUpon>
+      <LastGenOutput>RoseModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\RoseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RoseModel.edmx</DependentUpon>
+      <LastGenOutput>RoseModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Products.aspx" />
     <Content Include="cart.html" />
     <Content Include="checkout.html" />
     <Content Include="Contact.aspx" />
@@ -283,16 +295,6 @@
     <Content Include="js\ziehharmonika.js" />
     <Content Include="login.html" />
     <Content Include="product.html" />
-    <Content Include="Models\RoseModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RoseModel.edmx</DependentUpon>
-      <LastGenOutput>RoseModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\RoseModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RoseModel.edmx</DependentUpon>
-      <LastGenOutput>RoseModel.cs</LastGenOutput>
-    </Content>
     <Content Include="RJewellery.Master" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -445,6 +447,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ViewOrder.aspx.cs">
+      <DependentUpon>ViewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewOrder.aspx.designer.cs">
+      <DependentUpon>ViewOrder.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Category.aspx.cs">
       <DependentUpon>Category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -505,13 +514,6 @@
     <Compile Include="Models\Category.cs">
       <DependentUpon>RoseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Customer.cs">
       <DependentUpon>RoseModel.tt</DependentUpon>
     </Compile>
@@ -523,6 +525,35 @@
     </Compile>
     <Compile Include="Models\Product.cs">
       <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoseModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoseModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoseModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RoseModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoseModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ProductTemp.cs" />
     <Compile Include="Register.aspx.cs">
@@ -544,21 +575,6 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\RoseModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RoseModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\RoseModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RoseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\RoseModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RoseModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="RJewellery.Master.cs">
       <DependentUpon>RJewellery.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
