@@ -22,19 +22,20 @@
     <div class="col-sm-4">
 	 <div class="about_1l clearfix">
 	  <img src="img/45.jpg" class="iw" alt="abc">
-	  <h4>Creating children’s clothes inspires us in every aspect</h4>
-	  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque dis Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque dis</p>
+	  <h4>Creating beautiful jewelry inspires us in every aspect of our work.</h4>
+	  <p>Welcome to Rose Jewellers! We are passionate about creating timeless and unique jewelry pieces that reflect individuality, elegance, and beauty. 
+		  Every piece in my collection is carefully crafted with love and attention to detail, blending traditional craftsmanship with modern designs</p>
 	 </div>
 	</div>
 	<div class="col-sm-4">
 	 <div class="about_1m clearfix">
 	  <img src="img/46.jpg" class="iw" alt="abc">
 	  <p><i class="fa fa-check"></i> We make your life easier.</p>
-	  <p><i class="fa fa-check"></i> Experience childcare.</p>
-	  <p><i class="fa fa-check"></i> Daycare is great…</p>
-	  <p><i class="fa fa-check"></i> We are childcare professionals.</p>
-	  <p><i class="fa fa-check"></i> Babysitting with a loving heart.</p>
-	  <p><i class="fa fa-check"></i> Your wishes just came true.</p>
+	  <p><i class="fa fa-check"></i> Modest Designs</p>
+	  <p><i class="fa fa-check"></i> Flexible Payment Plans </p>
+	  <p><i class="fa fa-check"></i> Trusted Quality</p>
+	  <p><i class="fa fa-check"></i> Perfect Gifts for Any Occasion</p>
+	 
 	 </div>
 	</div>
 	<div class="col-sm-4">
@@ -46,8 +47,9 @@
 	 <h5 class="normal">Wednesday	<span class="pull-right">9AM - 6PM</span></h5>
 	 <h5 class="normal">Thursday	<span class="pull-right">9AM - 6PM</span></h5>
 	 <h5 class="normal">Friday	<span class="pull-right">9AM - 6PM</span></h5>
-	 <h5 class="normal">Saturday	<span class="pull-right">9AM - 5PM</span></h5>
-	 <h4><a class="button_1" href="#">Contact Us </a></h4>
+	 <h5 class="normal">Saturday	<span class="pull-right">9AM - 6PM</span></h5>
+	<h5 class="normal">Sunday	<span class="pull-right">9AM - 12M</span></h5>
+	 <h4><a class="button_1" href="Contacts.aspx">Contact Us </a></h4>
 	 </div>
 	</div>
    </div>
@@ -66,14 +68,14 @@
 	</div>
 	<div class="col-sm-7">
      <div class="about_home_2r clearfix">
-	  <p class="mgt">All of our services are backed by our 100% satisfaction guarantee. Our electricians can install anything from new security lighting for your outdoors to a whole home generator that will keep your appliances working during a power outage. Our installation services are always done promptly and safely.</p>
+	  <p class="mgt">At Rose Jewellers, we believe that every piece of jewelry tells a story. Our collection is carefully curated to bring you timeless designs, crafted with quality and elegance in mind. We are passionate about offering a wide range of pieces, from everyday essentials to statement items, all meant to celebrate life’s special moments.</p>
 	  <ul>
-	   <li><i class="fa fa-check col_1"></i> Full-service electrical layout, design</li>
-	   <li><i class="fa fa-check col_1"></i> Wiring and installation/upgrades</li>
-	   <li><i class="fa fa-check col_1"></i> Emergency power solutions (generators)</li>
-	   <li><i class="fa fa-check col_1"></i> Virtually any electrical needs you have – just ask!</li>
+	   <li><i class="fa fa-check col_1"></i> Curated collections of fine and fashion jewelry</li>
+	   <li><i class="fa fa-check col_1"></i> Gift wrapping services for all occasions</li>
+	   <li><i class="fa fa-check col_1"></i> Flexible payment options for easy and convenient shopping</li>
+	   <li><i class="fa fa-check col_1"></i> Bespoke bridal and engagement jewelry designs</li>
 	  </ul>
-	  <h4><a class="button" href="#"> Know More</a></h4>
+	  
 	 </div>
 	</div>
    </div>
