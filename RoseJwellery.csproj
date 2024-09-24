@@ -179,6 +179,7 @@
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
     <Content Include="Contacts.aspx" />
+    <Content Include="img\3.jpg" />
     <Content Include="Models\RoseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RoseModel.edmx</DependentUpon>
@@ -260,7 +261,6 @@
     <Content Include="img\27.jpg" />
     <Content Include="img\28.jpg" />
     <Content Include="img\29.jpg" />
-    <Content Include="img\3.jpg" />
     <Content Include="img\30.jpg" />
     <Content Include="img\31.jpg" />
     <Content Include="img\32.jpg" />

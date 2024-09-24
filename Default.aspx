@@ -177,7 +177,7 @@
                             <h4><a href="#">Quality Jewelry</a></h4>
                             <hr>
                             <p>We are proud to realease the best products for our beloved customers.</p>
-                            <h5 class="normal"><a class="button_1" href="#">READ MORE</a></h5>
+                            <h5 class="normal"><a class="button_1" href="About.aspx">READ MORE</a></h5>
                         </div>
                     </div>
                     <div class="col-sm-3 space_all">
@@ -186,7 +186,7 @@
                             <h4><a href="#">Delivery</a></h4>
                             <hr>
                             <p>We are proud to realease the best products for our beloved customers.</p>
-                            <h5 class="normal"><a class="button_1" href="#">READ MORE</a></h5>
+                            <h5 class="normal"><a class="button_1" href="About.aspx">READ MORE</a></h5>
                         </div>
                     </div>
                     <div class="col-sm-3 space_all">
@@ -195,7 +195,7 @@
                             <h4><a href="#">Best Service</a></h4>
                             <hr>
                             <p>We are proud to realease the best products for our beloved customers.</p>
-                            <h5 class="normal"><a class="button_1" href="#">READ MORE</a></h5>
+                            <h5 class="normal"><a class="button_1" href="About.aspx">READ MORE</a></h5>
                         </div>
                     </div>
                     <div class="col-sm-3 space_all">
@@ -204,7 +204,7 @@
                             <h4><a href="#">Guarantee</a></h4>
                             <hr>
                             <p>We are proud to realease the best products for our beloved customers.</p>
-                            <h5 class="normal"><a class="button_1" href="#">READ MORE</a></h5>
+                            <h5 class="normal"><a class="button_1" href="About.aspx">READ MORE</a></h5>
                         </div>
                     </div>
                 </div>
