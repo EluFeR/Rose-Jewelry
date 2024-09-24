@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/RJewelleryAdmin.Master" AutoEventWireup="true" CodeBehind="ViewOrder.aspx.cs" Inherits="RoseJwellery.Admin.ViewOrder" %>
+﻿vis<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/RJewelleryAdmin.Master" AutoEventWireup="true" CodeBehind="ViewOrder.aspx.cs" Inherits="RoseJwellery.Admin.ViewOrder" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

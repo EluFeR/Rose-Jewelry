@@ -28,8 +28,8 @@
                             <br>
                             lacinia arcu eget nulla!
                         </p>
-                        <h4><a class="button col" href="#">View More</a></h4>
-                        <h4><a class="button_1 col" href="#">Shop Now</a></h4>
+                        <h4><a class="button col" href="Products.aspx">View More</a></h4>
+                        <h4><a class="button_1 col" href="Cart.aspx">Shop Now</a></h4>
                     </div>
                 </div>
                 <div class="item slides">
@@ -42,8 +42,8 @@
                             <br>
                             lacinia arcu eget nulla!
                         </p>
-                        <h4><a class="button col" href="#">View More</a></h4>
-                        <h4><a class="button_1 col" href="#">Shop Now</a></h4>
+                        <h4><a class="button col" href="Products.aspx">View More</a></h4>
+                        <h4><a class="button_1 col" href="Cart.aspx">Shop Now</a></h4>
                     </div>
                 </div>
                 <div class="item slides">
@@ -56,8 +56,8 @@
                             <br>
                             lacinia arcu eget nulla!
                         </p>
-                        <h4><a class="button col" href="#">View More</a></h4>
-                        <h4><a class="button_1 col" href="#">Shop Now</a></h4>
+                        <h4><a class="button col" href="Products.aspx">View More</a></h4>
+                        <h4><a class="button_1 col" href="Cart.aspx">Shop Now</a></h4>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="list_1r text-right clearfix">
-                            <h5 class="mgt"><a class="button mgt" href="#">VIEW ALL</a></h5>
+                            <h5 class="mgt"><a class="button mgt" href="Products.aspx">VIEW ALL</a></h5>
                         </div>
                     </div>
                 </div>
@@ -84,82 +84,16 @@
                     <div id="carousel-example" class="carousel slide" data-ride="carousel">
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/6.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>4566</h3>
-                                        <h4><a class="col_1" href="#">Nibh Elementum</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/7.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>4986</h3>
-                                        <h4><a class="col_1" href="#">Fusce Nec Tellus</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/8.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>5696</h3>
-                                        <h4><a class="col_1" href="#">Nulla Quis Sem</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/9.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>5836</h3>
-                                        <h4><a class="col_1" href="#">Vestibulum Lacinia</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/10.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>4566</h3>
-                                        <h4><a class="col_1" href="#">Nibh Elementum</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/11.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>4986</h3>
-                                        <h4><a class="col_1" href="#">Fusce Nec Tellus</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/12.jpg" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>5696</h3>
-                                        <h4><a class="col_1" href="#">Nulla Quis Sem</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="list_2i clearfix mgt-center">
-                                        <a href="#">
-                                            <img src="img/13.png" class="iw" alt="abc"></a>
-                                        <h3><i class="fa fa-rupee"></i>5836</h3>
-                                        <h4><a class="col_1" href="#">Vestibulum Lacinia</a></h4>
-                                        <h6>Product Code: 12LDSJECR03</h6>
-                                    </div>
-                                </div>
-                            </div>
+                             <!-- Product divs will be inserted here -->
+  <div id ="Bactive_itemsDiv" class="item active">
+
+      <!-- four divs  -->
+   </div>
+
+  <div id="BitemsDiv" class="item">
+
+  <!-- the second four divs  -->
+  </div>  
                         </div>
                     </div>
                     <div class="feature_2_last text-center clearfix">
@@ -190,7 +124,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="list_1r text-right clearfix">
-                            <h5 class="mgt"><a class="button mgt" href="#">VIEW ALL</a></h5>
+                            <h5 class="mgt"><a class="button mgt" href="Products.aspx">VIEW ALL</a></h5>
                         </div>
                     </div>
                 </div>
@@ -311,6 +245,53 @@
                     if (index < 4) {
                         // Append the product HTML to the container
                         activeProductList.innerHTML += productHTML;  
+                    }
+                    else {
+
+                        productList.innerHTML += productHTML;
+                    }
+                });
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        // Call the function to fetch and display products on page load
+        document.addEventListener('DOMContentLoaded', fetchAndDisplayProducts);
+    </script>
+    <script>
+        // Function to fetch the top products and populate the divs
+        async function fetchAndDisplayProducts() {
+            try {
+                // Fetch the products from the API
+                const response = await fetch('http://localhost:5294/api/Product/top8');
+                const products = await response.json(); // Convert to JSON
+
+                // Get the container where the products will be added
+                const activeProductList = document.getElementById('Bactive_itemsDiv');
+                const productList = document.getElementById('BitemsDiv');
+
+                // Clear the product list in case there is any existing content
+                activeProductList.innerHTML = '';
+                productList.innerHTML = '';
+
+                // Loop over the products and create divs
+                products.forEach((product, index) => {
+
+                    // Construct HTML for each product
+                    const productHTML = `       
+      <div class="col-sm-3">
+        <div class="list_2i clearfix mgt-center">
+          <a href="/Detail?id=${product.productId}"><img src="${product.imageUrl}" style="width: 230px; ; height: 180px;""class="iw" alt="${product.productName}"></a>
+          <h3>ETB  ${product.price}</h3> 
+          <h4><a class="col_1" href="/Detail?id=${product.productId}">${product.productName}</a></h4> 
+          <h6>Product Category: ${product.categoryName}</h6> 
+        </div>
+      </div>        
+  `;
+                    if (index < 4) {
+                        // Append the product HTML to the container
+                        activeProductList.innerHTML += productHTML;
                     }
                     else {
 

@@ -15,8 +15,31 @@ namespace RoseJwellery
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            bindGrid();
-            
+            if (!IsPostBack)
+            {
+                var groupedProducts = GetProductsGroupedByThree();
+                gvProducts.DataSource = groupedProducts;
+                gvProducts.DataBind();
+            }
+        }
+
+    
+
+        public List<List<Product>> GetProductsGroupedByThree()
+        {
+            var context = new Rose_JewelleryEntities();
+            var products = context.Products.ToList();
+
+
+            var groupedProducts = new List<List<Product>>();
+
+            for (int i = 0; i < products.Count; i += 3)
+            {
+                var group = products.Skip(i).Take(3).ToList();
+                groupedProducts.Add(group);
+            }
+
+            return groupedProducts;
         }
 
         private void bindGrid()

@@ -175,27 +175,61 @@
                          </div>
                          <div class="product_1r1 clearfix">
 
+                             <asp:GridView ID="gvProducts" runat="server" AutoGenerateColumns="False" >
+   <Columns>
 
-                             <asp:GridView ID="gvProducts" runat="server" AutoGenerateColumns="False" 
-                                OnRowDataBound="gvProducts_RowDataBound">
-                                <Columns>
-                                    <asp:TemplateField>
-                                        <ItemTemplate>
-                                            <div class="col-sm-4">
-                                                <div class="list_2i clearfix mgt-center">
-                                                    <a href='<%# Eval("ProductID", "Detail.aspx?Id={0}") %>'>
-                                                        <img src='<%# Eval("ImageURL") %>' class="iw" alt="abc" />
-                                                    </a>
-                                                    <h3>ETB <%# Eval("Price") %></h3>
-                                                    <h4><a class="col_1" href='<%# Eval("ProductID", "Detail.aspx?Id={0}") %>'>
-                                                        <%# Eval("ProductName") %></a></h4>
-                                                    <h6>Product Category: <%# Eval("CategoryName") %></h6>
-                                                </div>
-                                            </div>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                            </asp:GridView>
+                             <asp:TemplateField>
+    
+                                  <ItemTemplate>
+     <div class="col-sm-12">
+         <div class="list_2i clearfix mgt-center">
+             <a href='<%# Eval("[0].ProductID", "Detail.aspx?Id={0}") %>'>
+                 <img src='<%# Eval("[0].ImageURL") %>' style="width:230px ; height:180px" class="iw" alt="abc" />
+             </a>
+             <h3>ETB <%# Eval("[0].Price") %></h3>
+             <h4><a class="col_1" href='<%# Eval("[0].ProductID", "Detail.aspx?Id={0}") %>'>
+                 <%# Eval("[0].ProductName") %></a></h4>
+             <h6> <%# Eval("[0].Description") %></h6>
+         </div>
+     </div>
+                                      </ItemTemplate>
+</asp:TemplateField>
+<asp:TemplateField>
+                                <ItemTemplate>
+<div class="col-sm-12">
+    <div class="list_2i clearfix mgt-center">
+        <a href='<%# Eval("[1].ProductID", "Detail.aspx?Id={0}") %>'>
+            <img src='<%# Eval("[1].ImageURL") %>' style="width:230px ; height:180px" class="iw" alt="abc" />
+        </a>
+        <h3>ETB <%# Eval("[1].Price") %></h3>
+        <h4><a class="col_1" href='<%# Eval("[1].ProductID", "Detail.aspx?Id={0}") %>'>
+            <%# Eval("[1].ProductName") %></a></h4>
+        <h6> <%# Eval("[1].Description") %></h6>
+    </div>
+</div>
+                                 </ItemTemplate>
+</asp:TemplateField>
+<asp:TemplateField>
+                                 <ItemTemplate>
+<div class="col-sm-12">
+    <div class="list_2i clearfix mgt-center">
+        <a href='<%# Eval("[2].ProductID", "Detail.aspx?Id={0}") %>'>
+            <img src='<%# Eval("[2].ImageURL") %>' style="width:230px ; height:180px"  class="iw" alt="abc" />
+        </a>
+        <h3>ETB <%# Eval("[2].Price") %></h3>
+        <h4><a class="col_1" href='<%# Eval("[2].ProductID", "Detail.aspx?Id={0}") %>'>
+            <%# Eval("[2].ProductName") %></a></h4>
+        <h6> <%# Eval("[2].Description") %></h6>
+    </div>
+</div>
+                                 </ItemTemplate>
+</asp:TemplateField>
+
+                    </Columns>
+                                 </asp:GridView>
+
+
+                             
 
 
 
@@ -206,106 +240,9 @@
 
 
 
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/6.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>4566</h3>
-                                     <h4><a class="col_1" href="detail.html">Nibh Elementum</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/7.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>4986</h3>
-                                     <h4><a class="col_1" href="detail.html">Fusce Nec Tellus</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/8.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>5696</h3>
-                                     <h4><a class="col_1" href="detail.html">Nulla Quis Sem</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
+                             
                          </div>
-                         <div class="product_1r1 clearfix">
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/9.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>5836</h3>
-                                     <h4><a class="col_1" href="detail.html">Vestibulum Lacinia</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/10.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>4566</h3>
-                                     <h4><a class="col_1" href="detail.html">Nibh Elementum</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/11.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>4986</h3>
-                                     <h4><a class="col_1" href="detail.html">Fusce Nec Tellus</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="product_1r1 clearfix">
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/12.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>5696</h3>
-                                     <h4><a class="col_1" href="detail.html">Nulla Quis Sem</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/13.png" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>5836</h3>
-                                     <h4><a class="col_1" href="detail.html">Vestibulum Lacinia</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                             <div class="col-sm-4">
-                                 <div class="list_2i clearfix mgt-center">
-                                     <a href="detail.html">
-                                         <img src="img/6.jpg" class="iw" alt="abc"></a>
-                                     <h3><i class="fa fa-rupee"></i>4566</h3>
-                                     <h4><a class="col_1" href="detail.html">Nibh Elementum</a></h4>
-                                     <h6>Product Code: 12LDSJECR03</h6>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="product_1_last text-center clearfix">
-                             <div class="col-sm-12">
-                                 <ul>
-                                     <li><a href="detail.html"><i class="fa fa-chevron-left"></i></a></li>
-                                     <li class="act"><a href="detail.html">1</a></li>
-                                     <li><a href="detail.html">2</a></li>
-                                     <li><a href="detail.html">3</a></li>
-                                     <li><a href="detail.html">4</a></li>
-                                     <li><a href="detail.html">5</a></li>
-                                     <li><a href="detail.html">6</a></li>
-                                     <li><a href="detail.html"><i class="fa fa-chevron-right"></i></a></li>
-                                 </ul>
-                             </div>
-                         </div>
+                         
                      </div>
                  </div>
              </div>

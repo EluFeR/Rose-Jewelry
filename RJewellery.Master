@@ -78,12 +78,7 @@
 
 
 
-                                    <div class="header_1ri border_none clearfix">
-                                        <span class="span_1"><a class="col_1" href="#"><i class="fa fa-heart-o"></i></a></span>
-                                        <h5 class="mgt"><a href="#">My
-                                            <br>
-                                            Wishlist (0)</a></h5>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -112,14 +107,14 @@
                                 <li class="dropdown">
                                     <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Product<span class="caret"></span></a>
                                     <ul class="dropdown-menu drop_3" role="menu">
-                                        <li><a href="product.html">Product</a></li>
+                                        <li><a href="Products.aspx">Product</a></li>
                                         
                                     </ul>
                                 </li>
 
 
                                 <li><a class="m_tag" href="About.aspx">About Us</a></li>
-                                <li><a class="m_tag" href="contact.html">Contact</a></li>
+                                <li><a class="m_tag" href="Contacts.aspx">Contact</a></li>
                                 <li class="dropdown">
                                     <a class="m_tag" href="Cart.aspx" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="caret"></span></a>
                                     <ul class="dropdown-menu drop_3" role="menu">
@@ -159,7 +154,7 @@
                             </div>
                             <div class="col-sm-7 space_left">
                                 <div class="footer_bl  text-right clearfix">
-                                    <p>© Rose Jewelry . All Rights Reserved | Design by <a class="col_1" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+                                    <p>© Rose Jewelry . All Rights Reserved | Design by <a class="col_1" href="https://github.com/EluFeR">EluFeR</a></p>
                                 </div>
                             </div>
                         </div>

@@ -178,6 +178,7 @@
     <Content Include="Admin\AddProduct.aspx" />
     <Content Include="blog.html" />
     <Content Include="blog_detail.html" />
+    <Content Include="Contacts.aspx" />
     <Content Include="Models\RoseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RoseModel.edmx</DependentUpon>
@@ -493,6 +494,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\AspNetRole.cs">
       <DependentUpon>RoseModel.tt</DependentUpon>
     </Compile>
