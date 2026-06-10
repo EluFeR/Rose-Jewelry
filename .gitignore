@@ -24,6 +24,10 @@ packages/
 *.ilk
 .idea/
 
+# Database files (kept local, restored from SQL Server)
+App_Data/*.mdf
+App_Data/*.ldf
+
 # OS
 Thumbs.db
 desktop.ini
